@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <!-- javascript offline file -->
+    <script src="jquery.js"></script>
+    <!-- javascript UI -->
+    <link rel="stylesheet" href="jquery-ui.css">
+    <!-- javascript UI js file -->
+    <script src="jquery-ui.js"></script>
+    <!-- external styling css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- external javascript file -->
+    <script src="event.js"></script>
+    <!-- Google Fonts API -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        type="text/css" />
+</head>
+
+<body>
+
+    <div id="container">
+        <h2>To Do List</h2>
+        <button id="addProjectBtn">Add New Project</button>
+        <div id="projects">
+            <ul id="main">
+                <li><a href="#personal">Personal</a></li>
+                <li><a href="#work">Work</a></li>
+            </ul>
+            <ol id="personal">
+                <li><input type="checkbox">Some Gardening Work To Done</li>
+                <li><input type="checkbox">Play Snooker With Friendst</li>
+            </ol>
+            <ol id="work">
+                <li><input type="checkbox">Call The Doctor</li>
+                <li><input type="checkbox">Book Train Seats</li>
+                <li><input type="checkbox">Complete All Assignments</li>
+            </ol>
+        </div>
+        <button id="btnAddTask">Add New Task</button>
+
+        <div id="project-dialog" title="Add New Project">
+            <label for="project">Project Name:</label><input type="text" id="project">
+        </div>
+
+        <div id="task-dialog" title="Add New Task">
+            <label for="task">Task Name:</label><input type="text" id="task">
+        </div>
+
+    </div>
+
+</body>
+
+</html>
